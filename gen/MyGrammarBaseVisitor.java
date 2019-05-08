@@ -1,4 +1,4 @@
-// Generated from C:/Users/win 10/IdeaProjects/nfaReader/src/main/java\MyGrammar.g4 by ANTLR 4.7.2
+// Generated from C:/Users/Martin/IdeaProjects/nfaReader/src/main/java\MyGrammar.g4 by ANTLR 4.7.2
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 
 /**
@@ -51,6 +51,13 @@ public class MyGrammarBaseVisitor<T> extends AbstractParseTreeVisitor<T> impleme
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
+	@Override public T visitTypeDeclaration(MyGrammarParser.TypeDeclarationContext ctx) { return visitChildren(ctx); }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation returns the result of calling
+	 * {@link #visitChildren} on {@code ctx}.</p>
+	 */
 	@Override public T visitFunctionParameterName(MyGrammarParser.FunctionParameterNameContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
@@ -93,6 +100,13 @@ public class MyGrammarBaseVisitor<T> extends AbstractParseTreeVisitor<T> impleme
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
+	@Override public T visitStringDeclaration(MyGrammarParser.StringDeclarationContext ctx) { return visitChildren(ctx); }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation returns the result of calling
+	 * {@link #visitChildren} on {@code ctx}.</p>
+	 */
 	@Override public T visitInputSpecification(MyGrammarParser.InputSpecificationContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
@@ -108,4 +122,11 @@ public class MyGrammarBaseVisitor<T> extends AbstractParseTreeVisitor<T> impleme
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
 	@Override public T visitAnd(MyGrammarParser.AndContext ctx) { return visitChildren(ctx); }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation returns the result of calling
+	 * {@link #visitChildren} on {@code ctx}.</p>
+	 */
+	@Override public T visitBoolean(MyGrammarParser.BooleanContext ctx) { return visitChildren(ctx); }
 }

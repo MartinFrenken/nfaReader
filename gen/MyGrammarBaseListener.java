@@ -1,4 +1,4 @@
-// Generated from C:/Users/win 10/IdeaProjects/nfaReader/src/main/java\MyGrammar.g4 by ANTLR 4.7.2
+// Generated from C:/Users/Martin/IdeaProjects/nfaReader/src/main/java\MyGrammar.g4 by ANTLR 4.7.2
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
@@ -70,6 +70,18 @@ public class MyGrammarBaseListener implements MyGrammarListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitFunctionDefine(MyGrammarParser.FunctionDefineContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterTypeDeclaration(MyGrammarParser.TypeDeclarationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitTypeDeclaration(MyGrammarParser.TypeDeclarationContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -147,6 +159,18 @@ public class MyGrammarBaseListener implements MyGrammarListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterStringDeclaration(MyGrammarParser.StringDeclarationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitStringDeclaration(MyGrammarParser.StringDeclarationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterInputSpecification(MyGrammarParser.InputSpecificationContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -178,6 +202,18 @@ public class MyGrammarBaseListener implements MyGrammarListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitAnd(MyGrammarParser.AndContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterBoolean(MyGrammarParser.BooleanContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitBoolean(MyGrammarParser.BooleanContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

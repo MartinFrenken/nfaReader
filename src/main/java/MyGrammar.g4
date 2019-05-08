@@ -14,7 +14,7 @@ typeDeclaration:numberDeclaration|stringDeclaration;
 functionParameterName : VARIABLE;
 functionInput         : EQUALS VARIABLE SINGLENUMBER RIGHTBRACKET;
 functionParameter:LEFTBRACKET parameterDefine* RIGHTBRACKET;
-parameterDefine:  LEFTBRACKET functionParameterName  INTEGER? RIGHTBRACKET;
+parameterDefine:  LEFTBRACKET functionParameterName  (INTEGER?|STRINGTOKEN?) RIGHTBRACKET;
 coordinate: COORDINATE;
 numberDeclaration: (INTEGER (SINGLENUMBER|inputSpecification))|(NUMBER RIGHTBRACKET);
 stringDeclaration: STRINGTOKEN QUOTE name QUOTE;

@@ -1,4 +1,4 @@
-// Generated from C:/Users/win 10/IdeaProjects/nfaReader/src/main/java\MyGrammar.g4 by ANTLR 4.7.2
+// Generated from C:/Users/Martin/IdeaProjects/nfaReader/src/main/java\MyGrammar.g4 by ANTLR 4.7.2
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -40,6 +40,12 @@ public interface MyGrammarVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitFunctionDefine(MyGrammarParser.FunctionDefineContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link MyGrammarParser#typeDeclaration}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitTypeDeclaration(MyGrammarParser.TypeDeclarationContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link MyGrammarParser#functionParameterName}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
@@ -76,6 +82,12 @@ public interface MyGrammarVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitNumberDeclaration(MyGrammarParser.NumberDeclarationContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link MyGrammarParser#stringDeclaration}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitStringDeclaration(MyGrammarParser.StringDeclarationContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link MyGrammarParser#inputSpecification}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
@@ -93,4 +105,10 @@ public interface MyGrammarVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitAnd(MyGrammarParser.AndContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link MyGrammarParser#boolean}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitBoolean(MyGrammarParser.BooleanContext ctx);
 }

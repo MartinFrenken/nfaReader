@@ -1,4 +1,4 @@
-// Generated from C:/Users/win 10/IdeaProjects/nfaReader/src/main/java\MyGrammar.g4 by ANTLR 4.7.2
+// Generated from C:/Users/Martin/IdeaProjects/nfaReader/src/main/java\MyGrammar.g4 by ANTLR 4.7.2
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -56,6 +56,16 @@ public interface MyGrammarListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitFunctionDefine(MyGrammarParser.FunctionDefineContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link MyGrammarParser#typeDeclaration}.
+	 * @param ctx the parse tree
+	 */
+	void enterTypeDeclaration(MyGrammarParser.TypeDeclarationContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link MyGrammarParser#typeDeclaration}.
+	 * @param ctx the parse tree
+	 */
+	void exitTypeDeclaration(MyGrammarParser.TypeDeclarationContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link MyGrammarParser#functionParameterName}.
 	 * @param ctx the parse tree
@@ -117,6 +127,16 @@ public interface MyGrammarListener extends ParseTreeListener {
 	 */
 	void exitNumberDeclaration(MyGrammarParser.NumberDeclarationContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link MyGrammarParser#stringDeclaration}.
+	 * @param ctx the parse tree
+	 */
+	void enterStringDeclaration(MyGrammarParser.StringDeclarationContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link MyGrammarParser#stringDeclaration}.
+	 * @param ctx the parse tree
+	 */
+	void exitStringDeclaration(MyGrammarParser.StringDeclarationContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link MyGrammarParser#inputSpecification}.
 	 * @param ctx the parse tree
 	 */
@@ -146,4 +166,14 @@ public interface MyGrammarListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitAnd(MyGrammarParser.AndContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link MyGrammarParser#boolean}.
+	 * @param ctx the parse tree
+	 */
+	void enterBoolean(MyGrammarParser.BooleanContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link MyGrammarParser#boolean}.
+	 * @param ctx the parse tree
+	 */
+	void exitBoolean(MyGrammarParser.BooleanContext ctx);
 }
