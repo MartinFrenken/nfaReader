@@ -1,5 +1,6 @@
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.ParseTree;
+import org.antlr.v4.runtime.tree.ParseTreeWalker;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -28,8 +29,9 @@ public class Main  {
         MyGrammarLexer lexer = new MyGrammarLexer(chartStream);
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         MyGrammarParser parser = new MyGrammarParser(tokens);
-        ParseTree tree = parser.myStart();
-        MyVisitor visitor = new MyVisitor();
-        visitor.visit(tree);
+        MyGrammarParser.MyStartContext startContext = parser.myStart();
+        MyListener myListener = new MyListener();
+        ParseTreeWalker.DEFAULT.walk(myListener,startContext);
+
     }
 }
